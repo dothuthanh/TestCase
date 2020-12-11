@@ -36,6 +36,8 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+        compile group: 'org.postgresql', name: 'postgresql', version: '42.2.18'
+
     }
     testImplementation 'org.springframework.security:spring-security-test'
 }
